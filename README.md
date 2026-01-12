@@ -1,28 +1,41 @@
 # 📰 News Cloud App
 
-News application built with **Flutter**, it keeps users updated with the latest global and local headlines. The app features a smooth user interface and allows users to filter news based on various categories.
+A modern and fast news application built with **Flutter**, designed to keep users updated with the latest global and local headlines. The app features a smooth user interface and allows users to filter news based on various categories.
 
 ---
 
 ## ✨ Features
 
 * **Breaking News:** Get the latest articles and headlines instantly.
-* **Category Filtering:** Browse news by specific interests (Sports, Technology, Health, Science, etc.).
+* **Category Filtering:** Browse news by specific interests.
 * **Smooth UI:** Implemented using `CustomScrollView` and `Slivers` for a seamless scrolling experience.
 * **Localization Support:** Fetches and displays news content in Arabic (configurable via API settings).
 * **High Performance:** Efficient state management and optimized image caching.
 
 ---
 
-## 📸 News Categories
+## 📑 News Categories
 
-The application covers a wide range of news sources categorized as follows:
+The application covers a wide range of news sources covering the following topics:
 
-| **Sports** | **Technology** | **Health** |
-|:---:|:---:|:---:|
-| ![Sports](assets/sports.avif) | ![Technology](assets/technology.jpeg) | ![Health](assets/health.avif) |
-| **Business** | **Science** | **Entertainment** |
-| ![Business](assets/business.avif) | ![Science](assets/science.avif) | ![Entertainment](assets/entertaiment.avif) |
+* **Sports**
+* **Technology**
+* **Health**
+* **Business**
+* **Science**
+* **Entertainment**
+
+---
+
+## 📸 App Gallery
+
+
+
+![WhatsApp Image 2026-01-12 at 6 21 42 PM](https://github.com/user-attachments/assets/90acaff7-555a-42ac-9b08-c474942bc34c)
+![WhatsApp Image 2026-01-12 at 6 21 43 PM](https://github.com/user-attachments/assets/420490a4-fa28-4d60-8620-943d30373d59)
+![1](https://github.com/user-attachments/assets/8db15aef-500b-433a-b524-783a41232f11)
+ 
+
 
 ---
 
