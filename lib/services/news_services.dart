@@ -16,7 +16,7 @@ class NewsServices {
 
       for (int i = 0; i < jsonDAta["totalResults"]; i++) {
         ArticleModel article = ArticleModel(
-          title: jsonDAta["articles"][i]["title"],
+          title: jsonDAta["articles"][i]["title"] ?? "No Title",
           img: jsonDAta["articles"][i]["urlToImage"],
           article: jsonDAta["articles"][i]["description"],
         );
@@ -24,6 +24,7 @@ class NewsServices {
       }
       return articlesList;
     } catch (e) {
+      print(e);
       return [];
     }
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
 
+import '../gen/assets.gen.dart';
+
 class NewsWidgets extends StatelessWidget {
   final ArticleModel article;
   const NewsWidgets({super.key, required this.article});
@@ -8,7 +10,12 @@ class NewsWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.network(article.img!),
+        Visibility(
+          visible: article.img == null,
+          replacement: Image.network(article.img!),
+          child: Image.asset(Assets.noImg.path),
+        ),
+
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [

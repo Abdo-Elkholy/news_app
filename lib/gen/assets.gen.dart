@@ -16,8 +16,10 @@ class Assets {
 
   static const String business = 'assets/business.avif';
   static const String entertaiment = 'assets/entertaiment.avif';
+  static const AssetGenImage error = AssetGenImage('assets/error.png');
   static const String general = 'assets/general.avif';
   static const String health = 'assets/health.avif';
+  static const AssetGenImage noImg = AssetGenImage('assets/no_img.png');
   static const String science = 'assets/science.avif';
   static const String sports = 'assets/sports.avif';
   static const AssetGenImage technology = AssetGenImage(
@@ -28,8 +30,10 @@ class Assets {
   static List<dynamic> get values => [
     business,
     entertaiment,
+    error,
     general,
     health,
+    noImg,
     science,
     sports,
     technology,

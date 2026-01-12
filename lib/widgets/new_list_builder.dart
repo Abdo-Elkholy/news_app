@@ -4,6 +4,8 @@ import 'package:news_app/models/article_model.dart';
 import 'package:news_app/services/news_services.dart';
 import 'package:news_app/widgets/news_list_view.dart';
 
+import '../gen/assets.gen.dart';
+
 class NewListBuilder extends StatefulWidget {
   final String category;
   const NewListBuilder({super.key, this.category = "general"});
@@ -28,7 +30,11 @@ class _NewListBuilderState extends State<NewListBuilder> {
         if (snapshot.hasData) {
           return NewsListView(articlesList: snapshot.data!);
         } else if (snapshot.hasError) {
-          return const SliverToBoxAdapter(child: Text("error 404"));
+          return SliverToBoxAdapter(
+            child: Column(
+              children: [Image.asset(Assets.error.path), Text("ERROR")],
+            ),
+          );
         } else {
           return const SliverFillRemaining(
             child: Center(child: CircularProgressIndicator()),
